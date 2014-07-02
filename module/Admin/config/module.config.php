@@ -6,6 +6,7 @@ return array(
             'Admin\Controller\Index' => 'Admin\Controller\IndexController',
         ),
     ),
+    
     // Sección nueva donde definimos las reglas de ruteo y el ruteado principal
     'router' => array(
         'routes' => array(
@@ -26,6 +27,7 @@ return array(
             ),
         ),
     ),
+    
     'view_manager' => array(
         'template_path_stack' => array(
             'admin' => __DIR__ . '/../view',
