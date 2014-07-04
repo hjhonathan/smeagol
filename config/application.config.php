@@ -2,6 +2,7 @@
 
 return array(
     'modules' => array(
+        'AssetManager',
         'Application',
         'Admin', // <-- Agregamos esta línea
     ),
