@@ -89,10 +89,9 @@ return array(
             'error/index' => __DIR__ . '/../view/error/index.phtml',
         ),
         'template_path_stack' => array(
-            __DIR__ . '/../view',
+            __DIR__ . '/../../../themes', // <------------------  Modificar aca
         ),
     ),
-   
     // agregar este bloque al final
     'asset_manager' => array(
         'resolver_configs' => array(
