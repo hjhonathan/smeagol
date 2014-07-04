@@ -92,11 +92,7 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
-    'view_manager' => array(
-        'template_path_stack' => array(
-            'admin' => __DIR__ . '/../view',
-        ),
-    ),
+   
     // agregar este bloque al final
     'asset_manager' => array(
         'resolver_configs' => array(
