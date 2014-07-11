@@ -51,6 +51,11 @@ class Page extends NodeTable {
             $this->tableGateway->insert($data);
         } else {
             if ($this->getPage($id)) {
+                
+                // para hacer quiebres
+                //print_r($data);
+                //exit();
+                
                 $this->tableGateway->update($data, array('id' => $id));
             } else {
                 throw new \Exception('Page does not exist');
