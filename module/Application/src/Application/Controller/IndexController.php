@@ -20,7 +20,7 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
         return new ViewModel(array(
-            'nodes' => $this->getNodeTable()->fetchAll(),
+            'noticias' => $this->getNodeTable()->getNoticiasFront(),
         ));
     }
     

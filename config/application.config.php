@@ -4,7 +4,9 @@ return array(
     'modules' => array(
         'AssetManager',
         'Application',
-        'Admin', // <-- Agregamos esta línea
+        'Admin',
+        'Page',
+        'Noticias',
     ),
     'module_listener_options' => array(
         'config_glob_paths' => array(
