@@ -22,28 +22,24 @@
         <!-- Shell -->
         <div class="shell">
 
-            <!-- Header -->
-            <div id="header">
-
-                <h1 id="logo"><a href="#" title="free website css template">COMPANY NAME HERE<span>FREE WEBSITE TEMPLATE</span></a></h1>
-
-                <div id="navigation">
-                    <ul>
-                        <li><a href="<?php echo $this->basePath(); ?>/" class="active" title="Inicio"><span>Inicio</span></a></li>
-                        <li><a href="<?php echo $this->basePath(); ?>/page/nosotros" title="Nosotros"><span>Nosotros</span></a></li>
-                        <li><a href="<?php echo $this->basePath(); ?>/page/servicios" title="Servicios"><span>Servicios</span></a></li>
-                        <li><a href="<?php echo $this->basePath(); ?>/page/soluciones" title="Soluciones"><span>Soluciones</span></a></li>
-                        <li><a href="<?php echo $this->basePath(); ?>/page/soporte" title="Soporte"><span>Soporte</span></a></li>
-                        <li><a href="<?php echo $this->basePath(); ?>/page/contactenos" title="Contáctenos"><span>Contáctenos</span></a></li>
-                        <?php if ($is_login) { ?>
-                            <li><a href="<?php echo $this->basePath(); ?>/auth" title="Login"><span>Login</span></a></li>
-                        <?php } else { ?>		    
-                            <li><a href="<?php echo $this->basePath(); ?>/logout" title="Login"><span>Logout</span></a></li>
-                        <?php } ?>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Header -->
+         <!-- Header -->
+	<div id="header">		
+		
+		<h1 id="logo"><a href="#" title="free website css template">SMEAGOL INC<span>FREE WEBSITE TEMPLATE</span></a></h1>
+		<div id="login">
+		<?php if($is_login){ ?>
+		    	<a href="<?php echo $this->basePath();?>/login" title="Login"><span>Login</span></a>
+		<?php } else { ?>		    
+		    	<a href="<?php echo $this->basePath();?>/logout" title="Login"><span>Logout</span></a>
+		<?php } ?>
+		</div>		
+		<br/><br/>
+		<div id="navigation">
+                <?php echo $this->navigation('Navigation')->menu(); ?>			
+		</div>
+				
+	</div>
+<!-- End Header -->
             <?php echo $this->content; ?>	
         </div>
         <!-- End Shell -->
