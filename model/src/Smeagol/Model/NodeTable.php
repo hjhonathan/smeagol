@@ -39,4 +39,13 @@ class NodeTable {
         return $row;
     }
 
+    public function getNodeByUrl($url) {
+        $rowset = $this->tableGateway->select(array('url' => $url));
+        $row = $rowset->current();
+        if (!$row) {
+            return array();
+        }
+        return $row;
+    }
+
 }
