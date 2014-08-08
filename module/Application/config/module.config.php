@@ -53,10 +53,7 @@ return array(
                     ),
                 ),
             ),
-            
-            
-            
-             // Soap server for node operations
+            // Soap server for node operations
             'soap' => array(
                 'type' => 'segment',
                 'options' => array(
@@ -71,15 +68,6 @@ return array(
                     ),
                 ),
             ),
-            
-            
-            
-            
-            
-            
-            
-            
-            
             //Alias de Urls
             'node' => array(
                 'type' => 'Application\Router\Alias',

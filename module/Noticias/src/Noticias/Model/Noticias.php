@@ -13,7 +13,7 @@ class Noticias extends NodeTable {
         parent::__construct($tableGateway);
     }
 
-    public function fetchAllNoticias() {
+    public function fetchAllNoticiass() {
         // Realizando un select para obtener los nodos de tipo página
         $resultSet = $this->tableGateway->select(function (Select $select) {
             $select->where->equalTo('node_type_id', 2);

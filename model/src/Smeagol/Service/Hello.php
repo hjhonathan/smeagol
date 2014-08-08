@@ -3,7 +3,8 @@
 namespace Smeagol\Service;
 
 class Hello{
-     /**
+    
+    /**
      * This method returns a string
      * 
      * @param String $name
